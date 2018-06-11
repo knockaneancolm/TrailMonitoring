@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.applications4d.demomaps.MapsActivity">
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.applications4d.trailmonitoring.MapsActivity" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.75"
+    android:background="@drawable/green_button"
+    android:weightSum="4">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/textViewLocation"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_centerInParent="true"
+        android:text="West Clare Way" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:id="@+id/textViewDate"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_centerInParent="true"
+        android:text="30/4/2018" />
+
+</LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="15sp"
+            android:background="#ffffff"
+            android:layout_weight="0.6"
+            android:textColor="#000000"
+            android:id="@+id/textViewCoordinates"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_centerInParent="true"
+            android:text="Coordinates will display here" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="@color/silver"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/buttonChooseTrails"
+            android:text="Trail"
+            android:textAllCaps="false"
+            android:background="@drawable/maroon_button_background">
+
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/buttonChooseSigns"
+            android:text="Sign"
+            android:textAllCaps="false"
+            android:background="@drawable/maroon_button_background">
+
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/buttonChooseFlowers"
+            android:text="Flowers"
+            android:textAllCaps="false"
+            android:background="@drawable/maroon_button_background">
+
+        </Button>
+
+
+    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:background="#ffffff">
+        <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+            android:gravity="center_horizontal|center_vertical"
+            style="@style/Base.TextAppearance.AppCompat.Menu"
+        android:id="@+id/spinnerProblemDetailsTrails"
+        android:entries="@array/trailProblems">
+        </Spinner>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_horizontal|center_vertical"
+                style="@style/Base.TextAppearance.AppCompat.Menu"
+                android:id="@+id/spinnerProblemDetailsSigns"
+                android:entries="@array/signProblems">
+            </Spinner>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_horizontal|center_vertical"
+                style="@style/Base.TextAppearance.AppCompat.Menu"
+                android:id="@+id/spinnerProblemDetailsFlowers"
+                android:entries="@array/flowerProblems">
+            </Spinner>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.3">
+
+
+            <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButtonPhoto"
+            android:gravity="center_horizontal|center_vertical"
+            android:src="@drawable/camtrailstwo"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageViewPhoto"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="18sp"
+            android:layout_weight="1.5"
+            android:textColor="#000000"
+            android:layout_margin="2dp"
+            android:background="@drawable/commentbg"
+            android:id="@+id/editTextComment"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_centerInParent="true"
+            android:hint="Comment here" />
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:id="@+id/buttonSaveTrailProblem"
+            android:background="@null"
+            android:textSize="15sp"
+            android:textColor="#2F4F4F"
+            android:textAllCaps="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Save" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FullScreenContainerInMap">
+    </RelativeLayout>
+
+</RelativeLayout>
+

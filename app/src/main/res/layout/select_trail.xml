@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/green_button"
+        android:id="@+id/textViewSelectATrailTitle"
+        android:text="Select a Trail"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#ffffff"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        style="@style/Base.TextAppearance.AppCompat.Menu"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@+id/textViewSelectATrailTitle"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/buttonBeginMonitoring"
+        android:background="@null"
+        android:textAllCaps="true"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#2F4F4F"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:layout_above="@+id/buttonBeginMonitoring"
+        android:layout_below="@+id/spinner"
+        android:id="@+id/textViewTrailSelected"
+        android:text=""
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#000000"/>
+
+</RelativeLayout>

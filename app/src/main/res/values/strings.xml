@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TrailMonitoring</string>
+    <string name="title_activity_maps">Monitor</string>
+
+    <string-array name="trailLocations">
+        <item>Black Head</item>
+        <item>East Clare Way</item>
+        <item>West Clare Way</item>
+    </string-array>
+
+    <string-array name="mainProblems">
+        <item>Select</item>
+        <item>Trail</item>
+        <item>Sign</item>
+        <item>Flowers</item>
+    </string-array>
+
+    <string-array name="trailProblems">
+        <item>Choose Details</item>
+        <item>Blocked</item>
+        <item>Poor Condition</item>
+    </string-array>
+
+    <string-array name="signProblems">
+        <item>Choose Details</item>
+        <item>Directional</item>
+        <item>Interpretive</item>
+        <item>Health + Safety</item>
+        <item>Fogra</item>
+        <item>Private Property</item>
+    </string-array>
+
+    <string-array name="flowerProblems">
+        <item>Choose Details</item>
+        <item>Japanese Knotweed</item>
+        <item>Himalayan Balsam</item>
+        <item>Giant Hogweed</item>
+        <item>Giant Rhubarb</item>
+        <item>Rhododendron</item>
+
+    </string-array>
+    
+</resources>

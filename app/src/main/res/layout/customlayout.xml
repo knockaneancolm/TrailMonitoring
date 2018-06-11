@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/RLCustom"
+    android:layout_height="409dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="395dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="7dp"
+        android:background="@drawable/white_bg_grey_rim">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:id="@+id/customCellImage"
+        android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="129999"
+            android:layout_alignTop="@+id/customCellImage"
+            android:layout_alignStart="@+id/customCellImage"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:id="@+id/customCellID"
+            android:textSize="18sp"
+            android:background="@drawable/id_bg"
+            android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/customCellImage"
+        android:id="@+id/LLTrailNameDate"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textColor="#000000"
+            android:text="East Clare Way"
+            android:paddingLeft="7dp"
+            android:gravity="left|center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:id="@+id/CustomCellTrailName" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="3/4/2018"
+            android:padding="3dp"
+            android:gravity="left|center_vertical"
+            android:textSize="13sp"
+            android:textAllCaps="false"
+            android:id="@+id/CustomCellDate" />
+
+
+    </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/LLTrailNameDate"
+                android:textColor="@color/colorBlack"
+                android:text="Signs"
+                android:paddingLeft="7dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:id="@+id/CustomCellTrailProblem" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/LLTrailNameDate"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@+id/CustomCellTrailProblem"
+            android:text=":"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:id="@+id/CustomCellPunc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/LLTrailNameDate"
+                android:layout_toRightOf="@+id/CustomCellPunc"
+                android:textColor="@color/colorBlack"
+                android:text=""
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:id="@+id/CustomCellTrailProblemDetail" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/CustomCellTrailProblem"
+        android:textColor="@color/colorBlack"
+        android:padding="7dp"
+        android:gravity="left|center_vertical"
+        android:text=""
+        android:textSize="15sp"
+        android:id="@+id/CustomCellComment" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/LLbuttonsCustom"
+        android:layout_below="@+id/CustomCellComment"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:text="Upload"
+        android:textAllCaps="true"
+        android:background="@null"
+        android:id="@+id/CustomCellUploadButton"
+        android:textColor="#2F4F4F"
+        android:gravity="center_horizontal|center_vertical"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="Delete"
+            android:id="@+id/CustomCellDeleteButton"
+            android:background="@null"
+            android:textColor="#2F4F4F"
+            android:gravity="center_horizontal|center_vertical"/>
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:hint="Username"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="20sp"
+        android:background="@color/colorWhite"
+        android:id="@+id/EdittextUsernameLogin"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGrey"
+        android:id="@+id/SpacerBelowUsername"
+        android:layout_below="@id/EdittextUsernameLogin"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        android:layout_below="@+id/SpacerBelowUsername"
+        android:paddingRight="20sp"
+        android:password="true"
+        android:background="@color/colorWhite"
+        android:id="@+id/EdittextPasswordLogin"
+        android:textColor="@color/colorBlack"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/buttonLoginSubmit"
+        android:layout_below="@+id/EdittextPasswordLogin"
+        android:background="@null"
+        android:textAllCaps="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="15sp"
+        android:textColor="#2F4F4F"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/buttonLoginSubmit"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logotrails"
+        android:id="@+id/imageViewTrailMonAtLogin"
+        android:scaleType="fitCenter" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Logout"
+        android:id="@+id/buttonLogout"
+        android:background="@null"
+        android:textSize="15sp"
+        android:textColor="#2F4F4F"
+        android:textAllCaps="true"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome Aisling"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/textViewHi"
+        android:textColor="@color/colorBlack"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Add Trail Problem"
+        android:id="@+id/buttonMonitor"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_above="@+id/buttonLogout"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:textSize="15sp"
+        android:textColor="#2F4F4F"
+        android:textAllCaps="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/buttonViewEntries"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/buttonMonitor"
+        android:background="@null"
+        android:textSize="15sp"
+        android:textColor="#2F4F4F"
+        android:textAllCaps="true"
+        android:text="Trail Problems List"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewHi"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logotrails"
+        android:id="@+id/welcomeImage"
+        android:scaleType="fitCenter" />
+
+
+</RelativeLayout>
